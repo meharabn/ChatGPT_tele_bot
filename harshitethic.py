@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "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"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -15,7 +15,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "5820996654:AAFrg9XKE4OBILp2vFuOr4qBW3jjWZmMmhc"
+    tgkey = "5989905777:AAEbtfT-JjwbyF2MlAda92w6oIgAUucpV-c"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -35,8 +35,8 @@ running = True
 cache = None
 qcache = None
 chat_log = None
-botname = 'Talk with bot'
-username = 'talk_anything_with_bot'
+botname = 'hooman helper :3'
+username = 'hooman_helper_bot'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
@@ -66,8 +66,8 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'hooman helper :3'
+        username = 'hooman_helper_bot'
         update.message.reply_text('Hi')
         return 
     else:
@@ -93,16 +93,16 @@ def reset(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'hooman helper :3'
+        username = 'hooman_helper_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return
     if tim == 1:
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'hooman helper :3'
+        username = 'hooman_helper_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return 
     else:
@@ -128,8 +128,8 @@ def retry(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'hooman helper :3'
+        username = 'hooman_helper_bot'
         update.message.reply_text('Send a message!')
         return 
     else:
@@ -189,8 +189,8 @@ def wait(bot, update, botname, username, new):
                 cache = None
                 qcache = None
                 user = ""
-                username = 'harshitethic_bot'
-                botname = 'Harshit Ethic'
+                username = 'hooman_helper_bot'
+                botname = 'hooman helper :3'
                 update.message.reply_text('Timer has run down, bot has been reset to defaults.')
                 running = False
     else:
